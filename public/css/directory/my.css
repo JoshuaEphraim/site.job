@@ -1,0 +1,90 @@
+#second { background-color: #ffd285; min-height: 500px;}
+#second .inner { padding: 12px 0; }
+#second .column { float: left;  padding: 24px; box-sizing: border-box; }
+#second .column img { max-width: 100%; }
+#second .column.config,#second .column.search { width: unset; min-width: 20%; padding: 20px 0 0 30px; font-size: 15px; line-height: 1.2em; color: #c13c5d; }
+#second .column.col_table { width: unset; min-width: 60%;  font-size: 15px; line-height: 1.2em; }
+.white p.caption, .white .lSide, .white .rSide {text-align: center; }
+.review p.author {margin: 5px;}
+ul.pagination {
+    margin: 0;
+    margin-left: 50%;
+    margin-top: 4%;
+    padding: 4px;
+}
+ul.pagination li {
+    display: inline;
+
+    margin-right: 5px;
+    padding: 5px;
+
+}
+ul.pagination li a{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0 16px;
+    background-color: #ffd285;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.searchform{
+    display: inline-block;
+    vertical-align: middle;
+    float:right;
+}
+#resSearch{
+    text-align: center;
+    background-color: #ffd285;
+    min-height: 0px;
+    width:20%;
+}
+#mask {
+    background-color:rgba(0,0,0,.4);
+    height:100%;
+    position:fixed;
+    display: none;
+    width:100%;
+    top:0;
+    left:0;
+}
+.table .table{
+    background-color: #ffd285;
+}
+input, textarea, .uneditable-input{
+    width: auto;
+}
+.p{
+    position: relative;
+    bottom: 0px;
+}
+.list-group-item{
+    background-color: #ffd285;
+}
+.list-group-item.active,.list-group-item.active:hover,.pagination>.active>a,.pagination>.active>a:hover{
+    background-color: #555;
+}
+/* ----- Hover effects are enabled only for Desktop version ----- */
+@media screen and (max-width: 1024px) {
+    #second .column.col_table {
+        margin-right: 10%;
+        float: right;
+    }
+    #second .column.search { float:left;}
+}
+@media screen and (max-width: 524px) {
+    #second .column.col_table {
+        float: left;
+    }
+    .p{
+        float: left;
+    }
+    ul.pagination{
+        margin-left: 0;
+    }
+    .col_table th:nth-child(n+3), .col_table tbody td:nth-child(n+3)
+    {
+        display: none;
+    }
+}

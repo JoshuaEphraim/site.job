@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding='UTF-8'?>
+	<blocks>
+		<block name="header">
+			<text>Fail to comply with the norms in a minor way.</text>
+			<text>Do not meet some minor international Internet pharmacy verification standards.</text>
+			<text>You should check with us later when we have assessed it properly.</text>
+			<text>Systematic intentional incompliance with generally accepted norms.</text>
+			<text>Appears to comply with the standards of international Internet pharmacy verification.</text>
+		</block>
+		<block name="footer">
+			<text>Listed various threat websites.</text>
+			<text>Fake medicines shipped</text>
+			<text>Fraudulent charges</text>
+			<text>Appears to be less than six months old</text>
+			<text>Involves countries known to be high risk</text>
+		</block>
+		<block name="black_list">
+			<text>Malware installed from site</text>
+			<text>Privacy Warning</text>
+			<text>Can't accept Visa cards</text>
+			<text>Lifetime is relatively short.</text>
+			<text>High Number Of Suspicous Websites On This Server</text>
+		</block>
+		<block name="white_list">
+			<text>Listed as a ROGUE pharmacy</text>
+			<text>Low reliability rating by other websites</text>
+			<text>Technical contact email</text>
+			<text>Administrative contact</text>
+			<text>Reported as being untrustworthy</text>
+		</block>
+	</blocks>

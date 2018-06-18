@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+html, body { background-color: #ffd381;}
+.clear { display: block; clear: both; height: 0; }
+.left { float: left; }
+.right { float: right; }
+.hidden { display: none; }
+.inner { width: 100%; min-width: 320px; max-width: 1300px; margin: 0 auto; }
+.padder { padding: 12px 24px; }
+
+p { padding-bottom: 16px; }
+ul { padding-bottom: 16px; }
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font: 14px 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #505050;
+}
+#container a { cursor:pointer; }
+#container img { vertical-align:bottom; }
+#header {background-color: #fff;}
+#header .lSide { float: left; }
+#header .lSide a.trigger { display: none; float: right; width: 32px; height: 32px; margin-top: 3px; background: url(../img/bt-trigger.png) center center no-repeat; background-size: contain; }
+#header .rSide { float: right; }
+#header a.logo { display: inline-block; font-size: 25px; text-decoration: none; color: #9a9a9a; }
+#header .menu { padding-bottom: 0; }
+#header .menu li { display: inline-block; padding: 10px 0 0 20px; font-size: 15px; text-transform: uppercase; }
+#header .menu li a { text-decoration: none; color: #9a9a9a; }
+
+#first { background-color: #c13c5d; color: #fff; }
+#first .lSide { float: left; width: 100%; }
+#first .cSide { margin-right: 500px; }
+#first .rSide { float: left; width: 500px; margin-left: -500px; text-align: right; }
+#first p.caption { font-size: 36px; }
+#first p.caption span { color: #ffd381; }
+#first .element { padding-top: 12px; }
+#first .element .label { display: inline-block; vertical-align: top; position: relative; width: 170px; padding-right: 100px; font-size: 30px; text-transform: uppercase; }
+#first .element .label span { position: absolute; right: 6px; top: 0; }
+#first .element .label span.high { color: #ffd381; }
+#first .element .rating { display: inline-block; vertical-align: top; position: relative; width: 208px; height: 38px; margin-top: 3px; background: url(../img/bg-first-rating.png) right top no-repeat; }
+#first .element .rating div { position: absolute; right: 0; top: 0; width: 0; height: 38px; background: url(../img/bg-first-rating-on.png) right top no-repeat; }
+#first .ratenow { padding-top: 12px; }
+#first .ratenow a.link { display: inline-block; vertical-align: top; width: 170px; margin: 8px 10px 0 0; font-size: 30px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #fff; }
+
+#second { background-color: #ffd285; }
+#second .inner { padding: 12px 0; }
+#second .column { float: left; width: 30%; padding: 24px; box-sizing: border-box; }
+#second .column img { max-width: 100%; }
+#second .column.positive { width: 20%; padding: 78px 0 0 120px; background: url(../img/bg-second-positive.png) left 24px no-repeat; background-size: contain; font-size: 30px; line-height: 1.2em; color: #c13c5d; }
+#second .column.positive span { display: block; font-size: 50px; line-height: 1.6em; }
+#second .column.negative { width: 20%; padding: 78px 0 0 120px; background: url(../img/bg-second-negative.png) left 24px no-repeat; background-size: contain; font-size: 30px; line-height: 1.2em; color: #fff; }
+#second .column.negative span { display: block; font-size: 50px; line-height: 1.6em; }
+#second .menu { text-align: right; }
+#second .menu li { padding: 14px 0 22px; }
+#second .menu li:last-child { padding-bottom: 0; }
+#second .menu li span { display: inline-block; padding-left: 22px;}
+#second .menu li a { display: inline-block; padding: 4px 12px; background-color: #c13c5d; font-size: 30px; line-height: 30px; text-decoration: none; color: #fff; white-space: nowrap; }
+
+#third { background-color: #c13c5d; text-align: center; color: #fff; }
+#third .lSide { float: left; width: 50%; }
+#third .lSide p.caption { padding-bottom: 0; font-size: 36px; }
+#third .rSide { float: right; width: 50%; padding-top: 36px; }
+#third .rSide p.caption { font-size: 30px; }
+#third .chart { max-width: 460px; height: 288px; margin: 0 auto; }
+#third .total li { display: inline-block; padding: 0 22px 16px; }
+#third .total li span { display: block; font-size: 48px; }
+#third .map { padding-bottom: 12px; }
+#third .map img { max-width: 100%; }
+#third .locations li { display: inline-block; padding: 0 2px 7px; color: #c13c5d; }
+#third .locations li a { display: inline-block; padding: 4px 12px; background-color: #fff; text-decoration: none; color: #c13c5d; }
+
+.comments { background-color: #ffd285; text-align: center; color: #fff; }
+.comments .inner { padding-bottom: 16px; }
+.comments p.caption { padding: 12px 0 16px 24px; font-size: 36px; text-align: left; }
+.comments p.author { padding-bottom: 0; font-weight: 700; }
+.comments p.date { padding-bottom: 0; }
+.comments p { padding-bottom: 10px; }
+.comments p a { color: #fff; }
+.comments .element { float: left; width: 25%; padding: 0 24px 12px; box-sizing: border-box; text-align: left; }
+.comments .element .rating { width: 103px; height: 37px; margin: 0 0 16px -6px; }
+.comments .element .rating div { width: 0; height: 37px; background: url(../img/bg-comments-rating.png) left top no-repeat; }
+.comments a.more { display: inline-block; padding: 4px 16px 6px; background-color: #c13c5d; font-size: 30px; line-height: 30px; text-decoration: none; color: #fff; }
+
+.information { background-color: #c13c5d; color: #fff; }
+.information p.caption { font-size: 30px; }
+.information ul li a { color: #fff; }
+.information .column { float: left; width: 25%; padding: 12px 24px; box-sizing: border-box; }
+
+.white { background-color: #fff; }
+.white p.caption { font-size: 36px; color: #5c5c5c; }
+.white p.caption a { display: inline-block; float: right; margin-top: 8px; padding: 0 16px; background-color: #ffd285; font-size: 24px; text-decoration: none; color: #fff; }
+.white .lSide { float: left; width: 49%; }
+.white .rSide { float: right; width: 49%; }
+
+.pink { background-color: #c13c5d; color: #fff; }
+.pink p.caption { font-size: 36px; }
+
+.review p.author { padding-bottom: 0; font-weight: 700; }
+.review p.date { padding-bottom: 0; color: #969696; }
+
+#feedback{ background-color: #c13c5d; text-align: center; color: #fff; }
+#feedback p.caption{ font-size: 36px; }
+#feedback form{ width: 300px; max-width: 100%; margin: 0 auto; }
+#feedback input.txt{ width: 100%; margin: 0 0 12px; padding: 8px 12px; box-sizing: border-box; border: none; background-color: #fff; font: 18px 'Open Sans', sans-serif; font-weight: 400; color: #505050; }
+#feedback input.btn{ width: 100%; margin: 0 0 12px; padding: 2px 0; border: none; background-color: #ffd381; font: 30px 'Open Sans', sans-serif; font-weight: 400; text-align: center; color: #fff; cursor: pointer; }
+#feedback textarea.txt{ width: 100%; margin: 0 0 12px; padding: 8px 12px; box-sizing: border-box; border: none; background-color: #fff; font: 18px 'Open Sans', sans-serif; font-weight: 400; color: #505050; resize: none; }
+#feedback .ratenow{ padding-bottom: 22px; }
+#feedback .ratenow span{ display: inline-block; padding-bottom: 6px; font-size: 30px; font-weight: 700; text-transform: uppercase; }
+
+
+#footer { text-align: center; background-color: #FFFFFF;}
+#footer .inner { padding-top: 16px; }
+
+html,body{height: 100%;}
+#container {position: relative;
+    min-height: 100%;}
+#container>div:nth-last-child(2) { padding-bottom: 80px; }
+#footer {
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;}
+/* ----- Hover effects are enabled only for Desktop version ----- */
+@media screen and (min-width: 1024px) {
+
+    #header .menu li a:hover { color: #c13c5d; }
+
+    #first .ratenow a.link:hover { color: #ffd481; }
+
+    #second .menu li a:hover { background-color: #bd556f; }
+
+    .comments p a:hover { text-decoration: none; }
+
+    .comments a.more:hover { background-color: #bd556f; }
+
+    .information ul li a:hover { text-decoration: none; }
+
+    .white p.caption a:hover { background-color: #fcda9f; }
+
+    #feedback input.btn:hover { background-color: #fcda9f; }
+
+}
+
+@media screen and (max-width: 1124px) {
+
+    #second .column:nth-of-type(1) { width: 30%; }
+    #second .column.positive { width: 34%; font-size: 26px; }
+    #second .column.negative { width: 36%; font-size: 26px; }
+    #second .column:nth-of-type(4) { clear: left; float: none; width: auto; padding-bottom: 0; }
+    #second .menu { padding-top: 16px; text-align: center; }
+    #second .menu li { display: inline-block; padding: 0 12px 24px; }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .padder { padding: 12px; }
+
+    #second .column.positive { padding-top: 58px; }
+    #second .column.negative { padding-top: 58px; }
+
+    .comments p.caption { padding-left: 12px; }
+    .comments .element { padding: 0 12px 12px; }
+
+    .information .column { padding: 12px; }
+
+}
+
+@media screen and (max-width: 924px) {
+
+
+    #first .lSide { float: none; width: auto; }
+    #first .cSide { margin-right: 0; }
+    #first .rSide { float: none; margin: 0 auto; }
+
+    #second .column:nth-of-type(1) { float: none; width: auto; text-align: center; }
+    #second .column.positive { width: 50%; }
+    #second .column.negative { width: 50%; }
+
+    #third .lSide { float: none; width: auto; }
+    #third .rSide { float: none; width: auto; padding-top: 0; }
+
+    .comments .element { width: 50%; }
+
+    .information .column { width: 50%; }
+    .information .column:nth-of-type(1) { padding-bottom: 0; }
+    .information .column:nth-of-type(2) { padding-bottom: 0; }
+    .information .column:nth-of-type(3) { clear: left; padding-top: 0; }
+    .information .column:nth-of-type(4) { padding-top: 0; }
+
+}
+
+@media screen and (max-width: 724px) {
+    .padder { padding-bottom: 0; }
+
+    #header { padding-bottom: 12px; }
+
+    #first .ratenow { padding-bottom: 12px; }
+
+    .comments .element { float: none; width: auto; padding-bottom: 0; }
+
+    .information { padding-top: 12px; }
+    .information .column { float: none; width: auto; padding-top: 0; padding-bottom: 0; }
+
+    .white .lSide { float: none; width: auto; }
+    .white .rSide { float: none; width: auto; }
+    
+}
+
+@media screen and (max-width: 624px) {
+    #header .lSide { float: none; width: auto; }
+    #header .lSide a.trigger { display: block; }
+    #header .rSide { float: none; width: auto; }
+    #header .menu { display: none; padding-top: 12px; }
+    #header .menu li { display: block; padding: 2px 0; text-align: center; }
+    #header .menu li a { display: block; padding: 6px 0; }
+
+}
+
+
+@media screen and (max-width: 524px) {
+
+    #first .rSide { width: auto; text-align: center; }
+    #first p.caption { font-size: 26px; }
+    #first .element .label { display: block; width: auto; padding-right: 0; }
+    #first .element .label span { position: static; padding-left: 24px; }
+    #first .ratenow a.link { display: block; width: 200px; margin: 0 auto 12px; }
+
+    #second .column:nth-of-type(1) { padding-top: 12px; }
+    #second .column.positive { padding-left: 70px; font-size: 20px; }
+    #second .column.positive span { font-size: 30px; }
+    #second .column.negative { padding-left: 70px; font-size: 20px; }
+    #second .column.negative span { font-size: 30px; }
+    #second .menu li { display: block; padding-left: 0; padding-right: 0; }
+    #second .menu li a { font-size: 20px; }
+
+    #third .lSide p.caption { font-size: 26px; }
+    #third .rSide p.caption { font-size: 26px; }
+    #third .total li span { font-size: 38px; }
+
+    .comments .inner { padding-bottom: 12px; }
+    .comments p.caption { font-size: 26px; }
+    .comments a.more { display: block; margin: 0 12px; font-size: 24px; line-height: 24px; }
+
+    .information p.caption { font-size: 26px; }
+
+    .white p.caption { font-size: 26px; }
+    .white p.caption a { display: block; float: none; text-align: center; }
+
+    .pink p.caption { font-size: 26px; }
+
+    #feedback p.caption { font-size: 26px; }
+
+}

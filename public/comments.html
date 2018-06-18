@@ -1,0 +1,67 @@
+
+<div class="header">
+    <div class="header_resize">
+        <div class="logo">
+            <h1><a href="#">Domain Catalog <span>Lastver</span></a> <small><?php
+                        $a = 2; $b =4;
+                        echo 'SOME PHP CODE SAID THAT '.$a.' plus '.$b.' = '.($a+$b);
+
+                        ?></small></h1>
+        </div>
+        <div class="clr"></div>
+        <div class="menu_nav">
+            <ul>
+                <li id="1"><a href="?connect=sites">Catalogue</a></li>
+                <li id="clean"><a href="#">Clean All</a></li>
+                <li id="comments" class="active"><a href="?connect=comments">Comments</a></li>
+            </ul>
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>
+<div class="content">
+
+    <div class="clr"></div>
+    <div id="main1" class="mainbar">
+
+        <div class="article">
+
+            <?php
+            echo $db_c->error;
+            echo    "<table class='list'>";
+            echo "<tr>";
+            echo '<td>'.Сайт.'</td><td>'.Комментатор.'</td><td>'.Комментарий.'</td><td></td>';
+            echo"</tr>";
+            if(isset($comment))
+            {
+                foreach($comment as $c) {
+                    echo "<tr>";
+                    echo '<td>'.$c['domain'].'</td><td>'.$c['name'].'</td><td>'.$c['comment'].'</td><td><button id="'.$c['id'].'" class="delete">Удалить</button></td>';
+                    echo"</tr>";
+                }
+            }
+            echo    "</table>";
+            generatePagination($this_page, $pag['rows_max'], $connect, $search, $show_pages, '');
+            ?>
+
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="searchform">
+            <form id="formsearch" name="formsearch" method="get">
+                <input type="hidden" name="connect" value="<?php echo $_GET['connect'] ?>">
+                <input type="hidden" name="page" value="1">
+            <span>
+            <input name="search" class="editbox_search" id="editbox_search" maxlength="80" value="" type="text" />
+            </span>
+                <input name="button_search" src="Template/images/search_btn.gif" class="button_search" type="image" />
+            </form>
+        </div>
+        <div class="clr"></div>
+        <div class="gadget">
+
+        </div>
+
+    </div>
+    <div class="clr"></div>
+</div>

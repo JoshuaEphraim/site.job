@@ -1,0 +1,14 @@
+Options +FollowSymlinks
+	Options -Multiviews
+	
+RewriteEngine On
+	
+RewriteCond %{REQUEST_FILENAME} !-f
+	
+RewriteCond %{REQUEST_FILENAME} !-d
+	
+RewriteCond %{REQUEST_FILENAME} !favicon.ico	
+RewriteBase /
+
+	
+RewriteRule ^([^/]+).html$ domain.php?domain=$1 [L]

@@ -1,0 +1,37 @@
+#second .column.col_table { width: unset; text-align: center; margin-left: 10%;}
+#second p.caption{font-size: 30px;}
+
+
+#second{min-height: 100%;}
+
+
+@media screen and (max-width: 1024px) {
+    #second .column.col_table { width: 100%; text-align: center; margin-left: 4%;}
+
+
+}
+@media screen and (max-width: 924px) {
+    #second .column:nth-of-type(2) {
+        padding-top: 12px;
+        width: 30%;
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    #second .column.col_table { width: unset; text-align: center; margin-left: 0;}
+    .col_table th:nth-child(n+4), .col_table tbody td:nth-child(n+4)
+    {
+        display: none;
+    }
+    #second .column:nth-of-type(2) {
+        padding-top: 12px;
+        width: 30%;
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+}
+
